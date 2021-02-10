@@ -1,0 +1,9 @@
+/vendor/
+
+# docsファイルの除外設定
+/docs/phpdoc/
+/docs/coverage
+/docs/coverage-clover.xml
+
+# その他ファイルの除外設定
+.phpunit.result.cache
