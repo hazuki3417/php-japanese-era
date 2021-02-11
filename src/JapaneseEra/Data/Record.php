@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * @license MIT
+ * @author hazuki3417 <hazuki3417@gmail.com>
+ * @copyright 2021 hazuki3417 all rights reserved.
+ */
+
 namespace Selen\JapaneseEra\Data;
 
 use InvalidArgumentException;
@@ -7,39 +13,47 @@ use InvalidArgumentException;
 /**
  * 和暦情報を保持するクラス
  *
- * @method mixed methodName()
- *
- * @property mixed $name
+ * @see \Selen\JapaneseEra\Tests\Data\RecordTest テストコードクラス
  */
 class Record
 {
     /**
-     * @var string 和暦名を保持するプロパティ
+     * 和暦名を保持するプロパティ
+     *
+     * @var string
      */
     private $name;
 
     /**
-     * @var string 和暦名（アルファベット）を保持するプロパティ
+     * 和暦名（アルファベット）を保持するプロパティ
+     *
+     * @var string
      */
     private $alpha;
 
     /**
-     * @var \DateTime 和暦の開始日時を保持するプロパティ
+     * 和暦の開始日時を保持するプロパティ
+     *
+     * @var \DateTime
      */
     private $startDateTime;
 
     /**
-     * @var \DateTime 和暦の終了日時を保持するプロパティ
+     * 和暦の終了日時を保持するプロパティ
+     *
+     * @var \DateTime
      */
     private $endDateTime;
 
     /**
-     * コンストラクター
+     * 和暦情報を保持したオブジェクトを作成します
      *
      * @param string $name 和暦名を渡します
      * @param string $alpha 和暦名（アルファベット）を渡します
      * @param \DateTime $start 和暦の開始日時を渡します
      * @param \DateTime $end 和暦の終了日時を渡します
+     *
+     * @return Record 新しいRecordオブジェクトを返します
      */
     public function __construct(
         $name,
@@ -62,19 +76,19 @@ class Record
     }
 
     /**
-     * 和暦名を取得します。
+     * 和暦名を取得します
      *
      * @return string 和暦名を返します
      */
-    public function name()
+    public function name(): string
     {
         return $this->name;
     }
 
     /**
-     * 和暦名（アルファベット）を取得します。
+     * 和暦名（アルファベット）を取得します
      *
-     * @return string 和暦名（アルファベット）を取得します
+     * @return string 和暦名（アルファベット）を返します
      */
     public function alpha()
     {
@@ -82,9 +96,9 @@ class Record
     }
 
     /**
-     * 和暦の開始日時を取得します。
+     * 和暦の開始日時を取得します
      *
-     * @return \Datetime 和暦の開始日時を取得します
+     * @return \Datetime 和暦の開始日時を返します
      */
     public function startDateTime()
     {
@@ -92,9 +106,9 @@ class Record
     }
 
     /**
-     * 和暦の終了日時を取得します。
+     * 和暦の終了日時を取得します
      *
-     * @return \Datetime 和暦の終了日時を取得します
+     * @return \Datetime 和暦の終了日時を返します
      */
     public function endDateTime()
     {
