@@ -38,6 +38,6 @@ return [
         'name'      => '令和',
         'alpha'     => 'R',
         'startDate' => '20190501',
-        'endDate'   => '99999999',
+        'endDate'   => '99991231',
     ],
 ];
