@@ -1,34 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<phpdocumentor>
-    <parser>
-        <default-package-name>Default</default-package-name>
-        <encoding>utf-8</encoding>
-        <target>./docs/phpdoc</target>
-        <markers>
-            <item>TODO</item>
-            <item>FIXME</item>
-        </markers>
-        <extensions>
-            <extension>php</extension>
-            <!-- <extension>php3</extension> -->
-            <!-- <extension>phtml</extension> -->
-        </extensions>
-        <visibility></visibility>
-    </parser>
-    <transformer>
-        <target>./docs/phpdoc</target>
-    </transformer>
-    <transformations>
-        <template name="clean"/>
-    </transformations>
-    <files>
-        <directory>./src</directory>
-        <ignore>./example</ignore>
-        <ignore>./tests</ignore>
-        <ignore-hidden>true</ignore-hidden>
-        <ignore-symlinks>true</ignore-symlinks>
-    </files>
-    <logging>
-        <level>error</level>
-    </logging>
+<phpdocumentor
+    configVersion="3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://www.phpdoc.org"
+    xsi:noNamespaceSchemaLocation="https://docs.phpdoc.org/latest/phpdoc.xsd"
+>
+  <title>JapaneseEra</title>
+  <paths>
+    <output>docs/phpdoc</output>
+    <cache>docs/phpdocCache</cache>
+  </paths>
+  <version number="3.0.0">
+    <api>
+      <source dsn=".">
+        <path>src</path>
+      </source>
+      <output>api</output>
+      <extensions>
+        <extension>php</extension>
+      </extensions>
+      <default-package-name>JapaneseEra</default-package-name>
+      <markers>
+        <marker>TODO</marker>
+        <marker>FIX</marker>
+        <marker>FIXME</marker>
+      </markers>
+    </api>
+  </version>
+  <template name="default"/>
 </phpdocumentor>
