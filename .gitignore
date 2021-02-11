@@ -1,7 +1,7 @@
 /vendor/
 
 # docsファイルの除外設定
-/docs/phpdoc/
+/docs/phpdoc*
 /docs/coverage
 /docs/coverage-clover.xml
 
