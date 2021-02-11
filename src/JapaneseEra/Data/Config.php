@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * @license MIT
+ * @author hazuki3417 <hazuki3417@gmail.com>
+ * @copyright 2021 hazuki3417 all rights reserved.
+ */
+
 namespace Selen\JapaneseEra;
 
 // NOTE: 変換時の和暦文字列を変更したい場合は下記のキー値を修正してください
